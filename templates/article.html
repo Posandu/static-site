@@ -1,0 +1,37 @@
+<div class="p-8 overflow-x-hidden min-h-screen">
+    <article>
+        <img src="{imgurl}" alt="{title}" class="w-auto rounded mb-6 h-[200px]">
+
+        <div class="text-gray-600 text-sm">
+            {tags}
+        </div>
+
+        <a href="{link}">
+            <h1 class="mt-2 text-4xl max-w-3xl leading-tight font-semibold">
+                {title}
+            </h1>
+        </a>
+
+        <div class="mt-4 mb-8">
+            {meta}
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-12">
+            <main class="col-span-1 md:col-span-9">
+                {content}
+            </main>
+
+            <aside class="col-span-3 md:border-l md:ml-4 md:pl-4">
+                <div id="sidebar">
+                    <h2 class="text-2xl mb-4">Categories</h2>
+                    {categories}
+
+                    <h1 class="text-2xl">Ads</h1>
+                    <img src="https://via.placeholder.com/300x250" alt="">
+                </div>
+            </aside>
+        </section>
+    </article>
+</div>
+
+<script src="/stickysidebar.js"></script>
